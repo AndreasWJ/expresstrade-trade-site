@@ -1,0 +1,55 @@
+/* Gradient, from: #77e1ed to: #6f6dd8 */
+
+.inventory {
+	display: flex;
+	flex-direction: column;
+}
+
+.item {
+	cursor: pointer;
+}
+
+.item img {
+	display: block;
+	width: 100%;
+}
+
+.item-container {
+	/* background-color: #007bff; */
+}
+
+.active-item {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#77e1ed+0,6f6dd8+100 */
+	background: #77e1ed; /* Old browsers */
+	background: -moz-linear-gradient(left, #77e1ed 0%, #6f6dd8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #77e1ed 0%,#6f6dd8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #77e1ed 0%,#6f6dd8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77e1ed', endColorstr='#6f6dd8',GradientType=1 ); /* IE6-9 */
+}
+
+.active-item h4,
+.active-item h5,
+.active-item h6 {
+	color: white;
+}
+
+#trade-button {
+	margin-left: auto;
+}
+
+.trade-data {
+	/* Space around vertically doesn't work as expected with 'flex-direction: column', read more at
+	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container */
+	display: flex;
+	/* flex-direction: column; */
+	align-content: space-around;
+	flex-wrap: wrap;
+}
+
+.trade-data div {
+	width: 100%;
+}
+
+.trade-data div h6 {
+	text-align: center;
+}

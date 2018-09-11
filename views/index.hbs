@@ -1,0 +1,65 @@
+<div class="container">
+	<div class="jumbotron">
+		<h1 class="display-4">Integrating OPSkins's ExpressTrade with trading sites</h1>
+		<p class="lead">How does the ExpressTrade API integrate with trading sites? I could tell you, but I rather show you</p>
+		<hr class="my-4">
+		<p>The code is explained in depth in the article linked below with the focus on ExpressTrade integration. The full source is also available on GitHub.</p>
+		<a class="btn btn-primary btn-lg" href="#" role="button">Article</a>
+		<a class="btn btn-primary btn-lg" href="#" role="button">GitHub</a>
+	</div>
+
+	<div class="row">
+		<div class="col-5 inventory">
+      		<h4>Your inventory</h4>
+
+			<!-- Generate rows for the user's items -->
+			<div class="row item-grid">
+				{{#each userItems}}
+					<!-- The problem of assigning the 'data-item' attribute with just 'this' is that it tries to assign the attribute with a Javascript object.
+					The problem is that the value then becomes 'Object object' and not the object representation like you'd expect. To attach the item,
+					which is a Javascript object you need to store it as a JSON string hence the use of the helper 'stringifyJSON' -->
+					<div class="col col-lg-4 col-md-4 col-sm-6 item player-item" index="{{@index}}" data-item="{{ stringifyJSON this }}">
+						<img src="{{ image.300px }}">
+						<h6>{{ name }}</h6>
+						<h6>{{ centsToDollars suggested_price }}$</h6>
+					</div>
+				{{/each}}
+			</div>
+
+			<a id="trade-button" class="btn btn-primary btn-lg" role="button">Send Trade</a>
+		</div>
+
+		<div class="col-2 trade-data">
+			<div>
+				<h6 id="user-item-value">0$</h6>
+				<h6><<<</h6>
+			</div>
+
+			<div>
+				<h6 id="owner-item-value">0$</h6>
+				<h6>>>></h6>
+			</div>
+
+			<div>
+				<h6 id="trade-value">0$</h6>
+			</div>
+		</div>
+
+		<div class="col-5">
+			<h4>Choose the skins you wish to acquire</h4>
+
+			<!-- Generate rows for the owner's items -->
+			<div class="row item-grid">
+				{{#each ownerItems}}
+					<div class="col col-lg-4 col-md-4 col-sm-6 item owner-item" index="{{@index}}" data-item="{{ stringifyJSON this }}">
+						<img src="{{ image.300px }}">
+						<h6>{{ name }}</h6>
+						<h6>{{ centsToDollars suggested_price }}$</h6>
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/js/trading.js"></script>
