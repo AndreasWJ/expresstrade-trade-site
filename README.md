@@ -13,4 +13,4 @@ To get the NodeJS server running locally:
 - Replace configuration variables in `config.json` with your own API keys, secrets, etc
 - `node app` or `nodemon app` to start the local server
 
-[![Selecting items then requesting a trade](media/2.gif)]
+![Selecting items then requesting a trade](media/2.gif)
