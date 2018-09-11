@@ -1,0 +1,9 @@
+{
+	"opskinsApiKey": "insert your opskins api key here, read the article if you don't know how to get it",
+	"steamApiKey": "insert your steam api key here, read the article if you don't know how to get it",
+	"twoFactorSecret": "insert your opskins two factor secret here, read the article if you don't know how to get it",
+	"twoFactorSecretWithoutSpaces": "insert your two factor secret here, read the article if you don't know how to get it",
+	"profitFactor": 1.10,
+	"appId": 1,
+	"sessionSecret": "anysecret123"
+}
