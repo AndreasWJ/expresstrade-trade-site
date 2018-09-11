@@ -1,6 +1,5 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
-const mockData = require('./mock-data');
 const handlebarHelpers = require('./helpers/handlebars');
 const bodyParser = require('body-parser');
 const inventoryService = require('./services/inventory-service');

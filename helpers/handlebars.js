@@ -24,5 +24,6 @@ const register = function(Handlebars) {
 		return helpers;
 	}
 };
+
 module.exports.register = register;
 module.exports.helpers = register(null);
