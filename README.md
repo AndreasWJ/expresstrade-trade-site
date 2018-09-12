@@ -1,4 +1,5 @@
-# Trade Site Written From Scratch Integrated With OPSkins's ExpressTrade API
+![ExpressTrade Logo](media/ExpressTrade-Logo-Black.png)
+# Trade Site Integrated With OPSkins's ExpressTrade API
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 This NodeJS project is written with Express demonstrates how OPSkins's ExpressTrade API can be implemented on any site despite size and stack.
